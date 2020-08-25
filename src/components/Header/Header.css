@@ -1,0 +1,9 @@
+
+nav a{
+    margin-bottom: 0!important;
+    padding: 1rem!important;
+}
+nav a:hover{
+   background: rgb(67, 159, 250);
+   border-radius: 30px;
+}
