@@ -35,7 +35,7 @@ const List = () => {
     return (
         <div className="p-4 p-md-5">
             <Counter connected={connected}></Counter>
-            <h2 className="text-center pb-3 display-4">Buddy Suggestion</h2>
+            <h2 className="text-center pb-3 display-4">Buddy On Panda Tech</h2>
             <div className="row row-cols-1 row-cols-lg-3 row-cols-sm-2">
                 {
                     users.map(user => <User user={user} handleAddFriend={handleAddFriend} key={user.id}></User>)
