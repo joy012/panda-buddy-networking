@@ -8,6 +8,7 @@ function App() {
     <div>
       <Header></Header>
       <List></List>
+      <footer className="text-center py-3"><small>&copy; All right reserved. Panda Tech - 2020</small></footer>
     </div>
   );
 }
