@@ -7,9 +7,7 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <div className="container py-5">
-        <List></List>
-      </div>
+      <List></List>
     </div>
   );
 }

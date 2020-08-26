@@ -14,7 +14,7 @@ const Header = () => {
             <nav className="nav justify-content-center bg-primary">
                 <a className="nav-link text-white h5" href="\home">Home</a>
                 <a className="nav-link text-white h5" href="\profile">Profile</a>
-                <a className="nav-link text-white h5" href="\buddies">Buddies</a>
+                <a className="nav-link text-white h5" href="\buddies">Buddies Connected</a>
             </nav>
         </div>
     );
