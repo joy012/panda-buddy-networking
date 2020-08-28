@@ -17,11 +17,11 @@ const Counter = (props) => {
                     <div className="friend d-flex justify-content-between align-items-center">
                         <img src={user.image} className="profile-img" alt="..." />
                         <h4>{user.name}</h4> 
-                        <h5>{user.salary}</h5>
+                        <h5>${user.salary}</h5>
                     </div>
                 )
             }
-            <h3 className="py-3">Total Salary of All Panda Tech Buddies: {totalSalary}</h3>
+            <h3 className="py-3">Total Salary of All Panda Tech Buddies: ${totalSalary}</h3>
         </div>
     );
 };
