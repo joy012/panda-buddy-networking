@@ -23,17 +23,17 @@ const User = (props) => {
                     <img src={background} className="card-img-top" alt="..." />
                     <img className="profile-pic d-block mx-auto" src={image} alt=""/>
                 </div>
-                <div className="card-body">
-                    <div className="text-primary text-center pb-2">
-                        <h3 className="card-title">{name}</h3>
-                        <p><small><i className="fas fa-user"></i> {username}_{id}</small></p>
+                <div className="card-body text-primary">
+                    <h3 className="card-title text-center">{name}</h3>
+                    <p className="card-text text-center"><small><i className="fas fa-user"></i> {username}_{id}</small></p>
+                    <div className="info">
+                        <p className="card-text"><i className="fas fa-envelope"></i> {email}</p>
+                        <p className="card-text"><i className="fas fa-voicemail"></i> {phone}</p>
+                        <p className="card-text"><i className="fas fa-desktop"></i> {website}</p>
+                        <p className="card-text"><i className="fas fa-wallet"></i> ${salary}</p>
                     </div>
-                    <div className="text-primary pl-4 pl-md-5">
-                        <p><i className="fas fa-envelope"></i> {email}</p>
-                        <p><i className="fas fa-voicemail"></i> {phone}</p>
-                        <p><i className="fas fa-desktop"></i> {website}</p>
-                        <p><i className="fas fa-wallet"></i> ${salary}</p>
-                    </div>
+                </div>
+                <div className="card-footer">
                     {updateBtn()}
                 </div>
             </div>
