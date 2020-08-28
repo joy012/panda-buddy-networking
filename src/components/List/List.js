@@ -44,7 +44,7 @@ const List = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-5 my-sm-3 my-md-5 mt-md-5">
-                    <Counter connected={connected}></Counter>
+                    <Counter connected={connected} handleAddFriend={handleAddFriend}></Counter>
                 </div>
             </div>
         </div>

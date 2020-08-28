@@ -7,7 +7,7 @@ const User = (props) => {
     const updateBtn = () => {
         if(isConnected){
             return (
-                <button className="btn btn-outline-danger d-block mx-auto mb-3 rounded-pill" onClick={() => handleAddFriend(props.user, 'connected')}><i className="fas fa-arrow-right"></i> Disconnect</button>
+                <button className="btn btn-success d-block mx-auto mb-3 rounded-pill" onClick={() => handleAddFriend(props.user, 'connected')} disabled><i class="fas fa-link"></i> Connected</button>
             )
         }
         else{

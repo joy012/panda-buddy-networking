@@ -3,12 +3,15 @@ import './Counter.css';
 
 const Counter = (props) => {
     const connected = props.connected;
+    const handleAddFriend = props.handleAddFriend;
     let totalSalary = connected.reduce((total, person) => {
         const previous = parseInt((total).split(',').join(''));
         const salary = parseInt((person.salary).split(',').join(''));
         const result = (previous + salary).toLocaleString();
         return result;
     },'0');
+
+
     return (
         <div className="container bg-info text-white my-4 text-center">
             <h2 className="py-3">Connection: {connected.length}</h2>
@@ -18,6 +21,7 @@ const Counter = (props) => {
                         <img src={user.image} className="profile-img" alt="..." />
                         <h4>{user.name}</h4> 
                         <h5>${user.salary}</h5>
+                        <button className="btn btn-outline-danger rounded-pill" onClick={() => handleAddFriend(user, 'isConnected')}><i class="fas fa-user-minus"></i></button>
                     </div>
                 )
             }
