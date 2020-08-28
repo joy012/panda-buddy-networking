@@ -34,6 +34,7 @@ const List = () => {
 
     return (
         <div className="container-fluid">
+            <h2 className="text-center pb-3 display-4">Buddies On Panda Tech</h2>
             <div className="row">
                 <div className="col-10 col-sm-7 py-5 mx-auto">
                     <h2 className="text-center pb-3 display-4">Buddies On Panda Tech</h2>
